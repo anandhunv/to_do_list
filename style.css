@@ -1,0 +1,127 @@
+
+@font-face{
+    font-family: 'head';
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:fantasy;
+    box-sizing: border-box;
+   
+  
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'head';
+}
+img{
+    width: 40px;
+}
+.container{
+    background: linear-gradient(135deg,rgb(255, 0, 0),rgb(9, 228, 236));
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+
+
+}
+.card{
+    width: 100%;
+    max-width:540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.row{
+    background-color: rgb(224, 219, 219)  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 50px;
+    width: 350px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+button{
+    
+    border: none;
+    outline:none ;
+    padding: 16px 50px;
+    cursor: pointer;
+    margin-left: 120px;
+    background-color: rgb(100, 99, 99);
+    border-radius: 40px;
+    color: whitesmoke;
+
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: brown;
+}
+
+ul li{
+    list-style: none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select:none ;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:url(images/unchecked.png) ;
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left:8px;
+
+}
+
+ul li.checked{
+    color: crimson;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: red;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:  rgb(238, 233, 233);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.credit{
+    color: aliceblue;
+}
